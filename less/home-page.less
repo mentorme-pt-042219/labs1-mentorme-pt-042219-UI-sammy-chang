@@ -1,8 +1,58 @@
 // Home Page
 
 .header {
+    .flex(@justify: center;);
     background-color: #4696E5;
     color: #FFFFFF;
     height: 100vh;
+    text-align: right;
+
+    h1 {
+        margin-bottom: 3rem;
+    }
+
+    p {
+        line-height: 3.5rem;
+        font-size: 2.6rem;
+        color: #D1E5F9;
+        margin-bottom: 3rem;
+
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
+            border-bottom: 1px dotted #FFFFFF;
+
+            &:hover {
+                border: none;
+            }
+        }
+    }
+}
+
+.intro-container, .content-container, .icon-text-container, .bottom-container, .footer {
+    padding: 8rem 0 4rem 0;
+}
+
+.intro-container {
+    .flex(@direction: column;);
+
+    .icons-container {
+        .flex(@justify: center;);
+    }
+}
+
+.content-container {
     .flex(@justify: center;);
+}
+
+.icon-text-container {
+    .flex(@justify: center;);
+}
+
+.footer {
+    .flex(@direction: column;)
+}
+
+.btn {
+    .button();
 }
