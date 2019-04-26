@@ -140,9 +140,11 @@ body {
 h1 {
   font-size: 5.6rem;
   font-weight: bold;
+  margin-bottom: 3rem;
 }
 h2 {
   font-size: 3rem;
+  margin-bottom: 4rem;
 }
 h3 {
   font-size: 2.6rem;
@@ -173,9 +175,6 @@ img {
 .header .header-content {
   margin: 0 7rem;
 }
-.header h1 {
-  margin-bottom: 3rem;
-}
 .header p {
   line-height: 3.5rem;
   font-size: 2.6rem;
@@ -203,6 +202,8 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  text-align: center;
+  border-bottom: 1px rgba(224, 224, 224) solid;
 }
 .intro-container .icons-container {
   display: flex;
@@ -210,13 +211,33 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  color: rgba(224, 224, 224);
+  margin-bottom: 3.5rem;
 }
-.content-container {
+.middle-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.middle-container .content-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.middle-container .content-container .text-container {
+  width: 75%;
+  padding-left: 5rem;
+}
+.middle-container .content-container img {
+  width: 25%;
+  border-radius: 100%;
+  border: 4px #4696E5 solid;
 }
 .icon-text-container {
   display: flex;
@@ -231,6 +252,26 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  margin: 8rem 0 4rem 0;
+  border-top: 1px rgba(224, 224, 224) solid;
+}
+.footer .icons-container {
+  margin-bottom: 3.5rem;
+}
+.footer .icons-container span {
+  margin: 0 2.5rem;
+}
+.footer p {
+  font-size: 1.4rem;
+}
+.footer p a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(224, 224, 224);
+}
+.footer p a:hover {
+  color: #4696E5;
+  border: none;
 }
 .btn.login {
   padding: 1.5rem 3rem;
