@@ -161,10 +161,17 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #4696E5;
+  background-image: url('../images/background3.jpg');
+  background-size: 100%, cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #FFFFFF;
   height: 100vh;
   text-align: right;
+}
+.header .header-content {
+  margin: 0 7rem;
 }
 .header h1 {
   margin-bottom: 3rem;
@@ -173,7 +180,7 @@ img {
   line-height: 3.5rem;
   font-size: 2.6rem;
   color: #D1E5F9;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 .header p a {
   color: #FFFFFF;
@@ -225,12 +232,33 @@ img {
   flex-wrap: wrap;
   align-items: center;
 }
-.btn {
+.btn.login {
   padding: 1.5rem 3rem;
-  border: 1px solid #FFFFFF;
+  border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 0.6rem;
   color: #4696E5;
   font-size: 1.6rem;
   font-weight: bold;
-  background-color: white;
+  background-color: #FFFFFF;
+  transition: background-color 0.5s ease;
+  margin-left: 2rem;
+}
+.btn.login:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.btn.lrn-more {
+  padding: 1.5rem 3rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0.6rem;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: #4696E5;
+  transition: background-color 0.5s ease;
+  margin-left: 2rem;
+}
+.btn.lrn-more:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.25);
 }
