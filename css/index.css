@@ -145,10 +145,12 @@ h1 {
 h2 {
   font-size: 3rem;
   margin-bottom: 3rem;
+  line-height: 7rem;
 }
 h3 {
   font-size: 2.6rem;
   margin-bottom: 3rem;
+  line-height: 4rem;
 }
 p {
   font-size: 1.6rem;
@@ -167,20 +169,22 @@ img {
   background-image: url('../images/background3.jpg');
   background-size: 100%, cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   color: #FFFFFF;
   height: 100vh;
   text-align: right;
 }
 .header .header-content {
-  margin: 0 7rem;
+  padding: 5rem;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 .header p {
   line-height: 3.5rem;
   font-size: 2.6rem;
   color: #D1E5F9;
   margin-bottom: 4rem;
+  max-width: 60rem;
 }
 .header p a {
   color: #FFFFFF;
@@ -218,11 +222,13 @@ img {
 .middle-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  width: 60%;
+  max-width: 90rem;
   margin: 0 auto;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 .middle-container .content-container {
   display: flex;
@@ -230,13 +236,18 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  border-bottom: 1px solid rgba(224, 224, 224);
+}
+.middle-container .content-container:last-child {
+  border: none;
 }
 .middle-container .content-container .text-container {
-  width: 75%;
-  padding-left: 5rem;
+  width: 70%;
+  padding-left: 5%;
 }
 .middle-container .content-container img {
-  width: 25rem;
+  min-width: 10rem;
+  width: 30%;
   border-radius: 100%;
   border: 4px #4696E5 solid;
 }
@@ -246,10 +257,15 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  margin: 0 auto;
   border-top: 1px rgba(224, 224, 224) solid;
+  max-width: 90rem;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 .bottom-container p {
+  margin: 0 2rem;
   margin-bottom: 4rem;
 }
 .bottom-container .button-container {
@@ -261,7 +277,8 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  margin: 8rem 0 4rem 0;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
   border-top: 1px rgba(224, 224, 224) solid;
 }
 .footer .icons-container {
