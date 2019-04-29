@@ -167,9 +167,10 @@ img {
   flex-wrap: wrap;
   align-items: center;
   background-image: url('../images/background3.jpg');
-  background-size: 100%, cover;
+  background-color: red;
+  background-size: cover 100%;
   background-attachment: fixed;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   color: #FFFFFF;
   height: 100vh;
