@@ -4,8 +4,6 @@
 .header {
     .flex(@justify: center;);
     background-image: url('../images/background3.jpg');
-    background-color: red;
-    // background-size: 100%, cover;
     background-size: cover 100%;
     background-attachment: fixed;
     background-position: center;
@@ -13,6 +11,14 @@
     color: #FFFFFF;
     height: 100vh;
     text-align: right;
+
+    @media @tablet {
+        background-size: auto 100%;
+    }
+
+    @media @mobile {
+        background-size: auto 100%;
+    }
 
     .header-content {
         padding: 5rem;
@@ -58,7 +64,7 @@
 
 .middle-container {
     .flex(@direction: column;);
-    max-width: 90rem;
+    max-width: 110rem;
     margin: 0 auto;
     padding-left: 4%;
     padding-right: 4%;
@@ -66,6 +72,7 @@
     .content-container {
         .flex(@direction: row-reverse;);
         border-bottom: 1px solid rgba(224, 224, 224);
+
         &:last-child {
             border: none;
         }
@@ -80,6 +87,35 @@
             width: 30%;
             border-radius: 100%;
             border: 4px #4696E5 solid;
+        }
+
+        &:nth-child(2) {
+            .flex(@direction: row);
+            text-align: right;
+
+            .text-container {
+                width: 70%;
+                padding-right: 5%;
+            }
+
+            @media @mobile {
+                .flex(@direction: column-reverse;);
+                text-align: center;
+            }
+        }
+
+        @media @mobile {
+            .flex(@direction: column-reverse;);
+            text-align: center;
+            
+            img {
+                width: 60%;
+                margin: 0 0 5rem 0;
+            }
+
+            .text-container {
+                padding: 0;
+            }
         }
     }
 }
