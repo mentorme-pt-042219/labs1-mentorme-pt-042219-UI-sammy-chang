@@ -1,0 +1,36 @@
+// navigation
+
+.navbar {
+    .flex();
+
+    // text style
+    color: white;
+    text-decoration: none;
+    font-size: 2.4rem;
+    position: fixed;
+    top: 0px;
+    height: 6rem;
+    width: 100%;
+    background-color: @theme;
+
+    .navbar-logo {
+        font-size: 3rem;
+        color: white;
+        text-decoration: none;
+        margin: 0 5rem;
+        font-weight: bold;
+    }
+
+    .navbar-links {
+        .flex(@justify: space-between;);
+
+        .navbar-item {
+            margin: 0 5rem;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}

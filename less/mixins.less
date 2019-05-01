@@ -9,18 +9,30 @@
     align-items: @align;
 }
 
-.button(@btn-bg: #FFFFFF; @btn-font-clr: #4696E5; @btn-bg-per: 75%;) {
+// button
+.button(@btn-bg-clr: #FFFFFF; @btn-font-clr: @theme; @btn-bg-per: 75%;) {
     padding: 1.5rem 3rem;
     border: 2px solid rgba(0, 0, 0, 50%);
     border-radius: .6rem;
     color: @btn-font-clr;
     font-size: 1.6rem;
     font-weight: bold;
-    background-color: @btn-bg;
+    background-color: @btn-bg-clr;
     transition: background-color 0.5s ease;
 
     &:hover {
         cursor: pointer;
-        background-color: fade(#FFFFFF, @btn-bg-per);
+        background-color: @btn-bg-clr;
+        opacity: @btn-bg-per;
     }
+}
+
+// parallax effect
+.parallax(@bg-img: none; @bg-color: none;) {
+    background-image: @bg-img;
+    background-color: @bg-color;
+    background-size: cover 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
