@@ -1,0 +1,36 @@
+// contact page
+
+.contact-page {
+    .flex();
+
+    height: 100vh;
+    margin: auto;
+
+    h1 {
+        margin-bottom: 2rem;
+    }
+
+    form {
+        width: 75rem;
+        padding: 3rem;
+        background-color: rgba(242, 242, 242);
+        margin: auto;
+    }
+
+    .form-input {
+        width: 100%;
+        height: 3rem;
+        font-size: 1.6rem;
+        padding-left: 1rem;
+        margin: 1rem 0;
+
+        &.form-msg {
+            height: 30rem;
+        }
+    }
+
+    // hotfix: textarea font-family did not match document's
+    textarea {
+        font-family: 'Roboto', sans-serif;
+    }
+}
