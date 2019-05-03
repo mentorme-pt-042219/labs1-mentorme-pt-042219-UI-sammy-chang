@@ -1,9 +1,63 @@
 // about page
 
+.about-page {
+    .flex(@justify: center);
+    height: 100vh;
+}
+
+.about-page .contact-card {
+    .flex(@justify: flex-start;);
+    padding: 4rem;
+    width: 75rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+}
+
 .carousel {
-    img {
-        max-height: 100vh;
-        width: 100%;
+
+    .carousel-img {
+        width: 25rem;
+        margin: auto;
         display: none;
+        border-radius: 50%;
+        border: 1rem solid @theme-50;
+    }
+
+    .left-btn, .right-btn {
+        .flex(@justify: center;);
+        font-size: 4rem;
+        border: 2px solid #999999;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: #999999;
+            color: white;
+        }
+    }
+
+    .left-btn {
+        top: 50%;
+        left: 3rem;
+        transform: translate(0, -50%);
+    }
+
+    .right-btn {
+        top: 50%;
+        right: 3rem;
+        transform: translate(0, -50%);
+    }
+}
+
+.info {
+    .user {
+        display: none;
+        margin-left: 5rem;
+        padding-left: 5rem;
+        border-left: 1px solid black;
     }
 }
