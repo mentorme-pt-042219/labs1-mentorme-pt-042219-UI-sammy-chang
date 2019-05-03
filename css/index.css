@@ -136,6 +136,7 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
   color: #999999;
+  padding-top: 6rem 0;
 }
 h1 {
   font-size: 5.6rem;
