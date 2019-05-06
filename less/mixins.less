@@ -10,7 +10,7 @@
 }
 
 // button
-.button(@btn-bg-clr: #FFFFFF; @btn-font-clr: @theme; @btn-bg-per: 75%;) {
+.button(@btn-bg-clr: @theme; @btn-font-clr: white; @btn-bg-per: 75%;) {
     padding: 1.5rem 3rem;
     border: 2px solid rgba(0, 0, 0, 50%);
     border-radius: .6rem;
@@ -22,8 +22,7 @@
 
     &:hover {
         cursor: pointer;
-        background-color: @btn-bg-clr;
-        opacity: @btn-bg-per;
+        background-color: @theme-50;
     }
 }
 

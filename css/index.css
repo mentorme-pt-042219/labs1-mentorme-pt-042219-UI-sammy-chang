@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Gibson', sans-serif;
   color: #999999;
   padding-top: 6rem 0;
 }
@@ -170,18 +170,26 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  color: white;
+  color: rgba(70, 150, 229);
   text-decoration: none;
   font-size: 2.4rem;
   position: fixed;
   top: 0px;
-  height: 6rem;
   width: 100%;
-  background-color: rgba(70, 150, 229);
+  padding: 1rem 0;
+  background-color: white;
+  border-bottom: 1px #999999 solid;
+}
+.navbar .navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .navbar .navbar-logo {
   font-size: 3rem;
-  color: white;
+  color: rgba(70, 150, 229);
   text-decoration: none;
   margin: 0 2rem;
   font-weight: bold;
@@ -197,7 +205,7 @@ a {
   margin: 0 2rem;
 }
 .navbar .navbar-links .navbar-item a {
-  color: white;
+  color: rgba(70, 150, 229);
   text-decoration: none;
 }
 @media (max-width: 500px) {
@@ -205,16 +213,17 @@ a {
     display: none;
   }
 }
-.navbar .navbar-dropdown {
+.navbar .hamburger-links {
   display: none;
-  margin: 0 2rem;
-}
-.navbar .navbar-dropdown:hover {
-  background-color: magenta;
+  color: rgba(70, 150, 229);
+  font-size: 3rem;
+  background: none;
+  border: none;
+  margin-right: 1rem;
 }
 @media (max-width: 500px) {
-  .navbar .navbar-dropdown {
-    display: inline-block;
+  .navbar .hamburger-links {
+    display: flex;
   }
 }
 .header {
@@ -223,7 +232,7 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  background-image: url('../images/background3.jpg');
+  background-image: linear-gradient(to top right, #5574F7, #60C3FF);
   background-color: none;
   background-size: cover 100%;
   background-attachment: fixed;
@@ -403,23 +412,21 @@ a {
   padding: 1.5rem 3rem;
   border: 2px solid rgba(0, 0, 0, 0.5);
   border-radius: 0.6rem;
-  color: rgba(70, 150, 229);
+  color: white;
   font-size: 1.6rem;
   font-weight: bold;
-  background-color: #FFFFFF;
+  background-color: rgba(70, 150, 229);
   transition: background-color 0.5s ease;
-  margin-left: 2rem;
 }
 .btn.login:hover {
   cursor: pointer;
-  background-color: #FFFFFF;
-  opacity: 75%;
+  background-color: rgba(70, 150, 229, 0.5);
 }
 .btn.lrn-more {
   padding: 1.5rem 3rem;
   border: 2px solid rgba(0, 0, 0, 0.5);
   border-radius: 0.6rem;
-  color: white;
+  color: rgba(255, 255, 255);
   font-size: 1.6rem;
   font-weight: bold;
   background-color: rgba(70, 150, 229);
@@ -428,8 +435,7 @@ a {
 }
 .btn.lrn-more:hover {
   cursor: pointer;
-  background-color: rgba(70, 150, 229);
-  opacity: 25%;
+  background-color: rgba(70, 150, 229, 0.5);
 }
 .short-divider {
   width: 5%;

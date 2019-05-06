@@ -4,18 +4,23 @@
     .flex();
 
     // text style
-    color: white;
+    color: @theme;
     text-decoration: none;
     font-size: 2.4rem;
     position: fixed;
     top: 0px;
-    height: 6rem;
     width: 100%;
-    background-color: @theme;
+    padding: 1rem 0;
+    background-color: white;
+    border-bottom: 1px @gray solid;
+
+    .navbar-container {
+        .flex()
+    }
 
     .navbar-logo {
         font-size: 3rem;
-        color: white;
+        color: @theme;
         text-decoration: none;
         margin: 0 2rem;
         font-weight: bold;
@@ -28,7 +33,7 @@
             margin: 0 2rem;
 
             a {
-                color: white;
+                color: @theme;
                 text-decoration: none;
             }
         }
@@ -38,16 +43,16 @@
         }
     }
 
-    .navbar-dropdown {
+    .hamburger-links {
         display: none;
-        margin: 0 2rem;
+        color: @theme;
+        font-size: 3rem;
+        background: none;
+        border: none;
+        margin-right: 1rem;
 
-        &:hover {
-            background-color: magenta;
-        }
-        
         @media @mobile {
-            display: inline-block;
+            display: flex;
         }
     }
 }
