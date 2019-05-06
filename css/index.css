@@ -180,12 +180,22 @@ a {
   background-color: white;
   border-bottom: 1px #999999 solid;
 }
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
 .navbar .navbar-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .navbar .navbar-container {
+    width: 100%;
+  }
 }
 .navbar .navbar-logo {
   font-size: 3rem;
@@ -209,8 +219,23 @@ a {
   text-decoration: none;
 }
 @media (max-width: 500px) {
+  .navbar .navbar-links .navbar-item {
+    border-bottom: 1px #999999 solid;
+    width: 100%;
+    padding: 1rem 0;
+    padding-left: 2rem;
+    margin: 0;
+  }
+  .navbar .navbar-links .navbar-item:first-child {
+    border-top: 1px #999999 solid;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 500px) {
   .navbar .navbar-links {
     display: none;
+    flex-direction: column;
+    width: 100%;
   }
 }
 .navbar .hamburger-links {
@@ -412,10 +437,10 @@ a {
   padding: 1.5rem 3rem;
   border: 2px solid rgba(0, 0, 0, 0.5);
   border-radius: 0.6rem;
-  color: white;
+  color: rgba(70, 150, 229);
   font-size: 1.6rem;
   font-weight: bold;
-  background-color: rgba(70, 150, 229);
+  background-color: white;
   transition: background-color 0.5s ease;
 }
 .btn.login:hover {
@@ -485,11 +510,14 @@ a {
 }
 .about-page {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   height: 100vh;
+}
+.about-page h1 {
+  margin-bottom: 5rem;
 }
 .about-page .contact-card {
   display: flex;
