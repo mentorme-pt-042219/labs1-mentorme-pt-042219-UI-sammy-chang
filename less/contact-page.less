@@ -6,15 +6,19 @@
     height: 100vh;
     margin: auto;
 
-    h1 {
-        margin-bottom: 2rem;
-    }
-
     form {
         width: 75rem;
         padding: 3rem;
         background-color: rgba(242, 242, 242);
         margin: auto;
+
+        h1 {
+            margin-bottom: 2rem;
+
+            @media @mobile {
+                margin-top: 4rem;
+            }
+        }
     }
 
     .form-input {

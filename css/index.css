@@ -486,14 +486,19 @@ a {
   height: 100vh;
   margin: auto;
 }
-.contact-page h1 {
-  margin-bottom: 2rem;
-}
 .contact-page form {
   width: 75rem;
   padding: 3rem;
   background-color: rgba(242, 242, 242);
   margin: auto;
+}
+.contact-page form h1 {
+  margin-bottom: 2rem;
+}
+@media (max-width: 500px) {
+  .contact-page form h1 {
+    margin-top: 4rem;
+  }
 }
 .contact-page .form-input {
   width: 100%;
